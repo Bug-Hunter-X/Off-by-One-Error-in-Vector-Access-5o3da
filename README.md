@@ -1,0 +1,2 @@
+# Off-by-One Error in Vector Access
+This repository demonstrates a common off-by-one error in C++ when accessing elements of a `std::vector`. The error occurs because the loop condition `i <= 10` allows the loop to access `myVector[10]`, which is beyond the valid index range of 0 to 9.  This will lead to undefined behavior, potentially causing a crash or unexpected results.  The solution shows how to correct this by changing the loop condition to `i < 10`.
